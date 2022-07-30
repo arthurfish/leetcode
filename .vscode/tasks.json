@@ -1,0 +1,13 @@
+{
+    "tasks": [
+        {
+            "type": "shell",
+            "command": "java",
+            "args": [
+                "${file}"
+            ],
+            "label": "java run",
+            "problemMatcher": []
+        }
+    ]
+}
