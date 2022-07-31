@@ -1,5 +1,4 @@
-import java.text.Collator;
-import java.util.LinkedList;
+import java.util.Stack;
 
 /*
  * @lc app=leetcode id=402 lang=java
@@ -10,36 +9,33 @@ import java.util.LinkedList;
 // @lc code=start
 class Solution {
     int inf = Integer.MAX_VALUE;
-    String removeOneDigit(String num){
-        for (int i = 0; i < num.length(); i++) {
-            int this_elem = num.charAt(i);
-            int next_elem;
-            if(i != num.length() - 1){
-                next_elem = num.charAt(i+1);
-            }else{
-                next_elem = 0;
+
+    public String removeKdigits(String num, int k) {        
+        var stack = new Stack<Character>();
+        for(var c: num.toCharArray()){
+            while(!stack.empty() && k > 0 && stack.peek() > c){
+                stack.pop();
+                k--;
             }
-            if(next_elem < this_elem){
-                return num.substring(0, i) + num.substring(i + 1, num.length());
+            if(!(stack.empty() && c == '0')) {
+                stack.add(c);
             }
         }
-        return null;
-    }
-    public String removeKdigits(String num, int k) {
-        for (int i = 0; i < k; i++) {
-            num = removeOneDigit(num);
+        // System.out.println(stack);
+        // System.out.println(k);
+        while(!stack.empty() && k > 0){
+            stack.pop();
+            k--;
         }
-        while(num.length() > 0 && num.charAt(0) == '0') {
-            num = num.substring(1);
+        if(stack.empty()){
+            stack.add('0');
         }
-        if(num.length() == 0) {
-            num = "0";
-        }
-        
-        return num;
+        var s = new StringBuilder();
+        stack.forEach(s::append);
+        return s.toString();
     }
     public static void main(String[] args) {
-        String num = "10200";
+        String num = "112";
         String result = new Solution().removeKdigits(num, 1);
         System.out.println(result);
     }

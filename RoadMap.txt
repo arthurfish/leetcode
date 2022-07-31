@@ -98,13 +98,13 @@
 
 23、用最少数量的箭引爆气球（ LeetCode 452 ）OK
 
-24、移掉 K 位数字（ LeetCode 402 ） 
+24、移掉 K 位数字（ LeetCode 402 ） OK MMP
 
-25、跳跃游戏（ LeetCode 55 ）（✨有作业）
+25、跳跃游戏（ LeetCode 55 ）（✨有作业） OK FUCK 贪心？
 
-26、摆动序列（ LeetCode 376 ）
+26、摆动序列（ LeetCode 376 ） OK
 
-27、买卖股票的最佳时机 II（ LeetCode 122 ）
+27、买卖股票的最佳时机 II（ LeetCode 122 ） OK ?
 
 28、三数之和（LeetCode 15）
 
