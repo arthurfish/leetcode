@@ -106,20 +106,20 @@
 
 27、买卖股票的最佳时机 II（ LeetCode 122 ） OK ?
 
-28、三数之和（LeetCode 15）
+28、三数之和（LeetCode 15） OK
 
-29、最接近三数之和（LeetCode 16）
+29、最接近三数之和（LeetCode 16） OK
 
-30、加油站（ LeetCode 134 ）
+30、加油站（ LeetCode 134 ） OJBK
 
-31、合并区间（ LeetCode 56 ）
+31、合并区间（ LeetCode 56 ） OK
 
 第三周，搜索算法、回溯算法、位运算、二分查找
 1、二分查找基础知识
 
-2、二分查找（ LeetCode 704 ）
+2、二分查找（ LeetCode 704 ） OK
 
-3、搜索插入位置（ LeetCode 35 ）
+3、搜索插入位置（ LeetCode 35 ）OK
 
 4、在排序数组中查找元素的第一个和最后一个位置（ LeetCode 34 ）（✨有作业）
 
